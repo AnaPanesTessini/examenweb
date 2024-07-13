@@ -1,0 +1,146 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: #ffc7c7;
+    font-family: Arial, sans-serif; 
+}
+
+.navbar {
+    background-color: #6ebfb5;
+    margin-top: auto;
+    padding: 10px 0; 
+}
+
+.navbarbrand {
+    background-color: #24a19c;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar a {
+    color: #ffc7c7;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none; 
+    padding: 0 10px; 
+}
+
+.buscar {
+    display: flex;
+    align-items: center; 
+    margin: 20px auto; 
+    max-width: 600px; 
+}
+
+.buscar input {
+    flex: 1; 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    margin-right: 10px; 
+}
+
+.buscar button {
+    background-color: #6ebfb5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px; /* Añadido: Borde redondeado */
+    transition: background-color 0.3s ease;
+}
+
+.buscar button:hover {
+    background-color: #24a19c;
+}
+
+.slide {
+    margin-top: auto;
+}
+
+.slide img {
+    width: 100%; /* Añadido: Imagen al 100% del contenedor */
+    height: auto; /* Añadido: Altura automática */
+    object-fit: cover;
+}
+
+.carousel-item {
+    min-height: 100vh; /* Añadido: Mínimo de altura de pantalla completa */
+    display: flex; /* Añadido: Mostrar como flexbox */
+    align-items: center; /* Añadido: Centrar verticalmente */
+    justify-content: center; /* Añadido: Centrar horizontalmente */
+    text-align: center; /* Añadido: Centrar texto */
+}
+
+.carousel-caption {
+    position: absolute; /* Cambiado: Posición absoluta */
+    bottom: 50px; /* Ajustado: Espaciado inferior */
+    left: 50%; /* Añadido: Alineación centrada */
+    transform: translateX(-50%); /* Añadido: Centrar horizontalmente */
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 3rem; /* Añadido: Tamaño de fuente grande */
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px; /* Añadido: Espaciado inferior */
+}
+
+.carousel-caption p {
+    font-size: 1.5rem; /* Añadido: Tamaño de fuente grande */
+    margin-bottom: 20px; /* Añadido: Espaciado inferior */
+}
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #6ebfb5;
+    text-align: center;
+    padding: 10px 0; /* Añadido: Espaciado interno */
+}
+
+@media (max-width: 767px) {
+    .carousel-item {
+        min-height: 500px;
+    }
+
+    .carousel-item img {
+        height: 500px;
+    }
+
+    .carousel-caption {
+        bottom: 30px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 2.5rem; /* Ajustado: Tamaño de fuente */
+    }
+
+    .carousel-caption p {
+        font-size: 1rem; /* Ajustado: Tamaño de fuente */
+    }
+}

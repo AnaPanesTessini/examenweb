@@ -1,0 +1,127 @@
+
+html{
+    height: 100%;
+}
+body{
+    margin-top: auto;
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    background-color: #ffc7c7;
+    
+    
+}
+
+.navbar{
+    margin-top: auto;
+    background-color:#6ebfb5 ;
+}
+.navbarbrand{
+    background-color: #24a19c;
+
+
+}
+.navbar a{
+
+    color: #ffc7c7;
+    font-weight: 600;
+    font-size: 18px;
+}
+.buscar input{
+    background-color: transparent;
+    
+}
+.buscar button{
+    background-color: transparent;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 2px;
+       
+}
+.buscar button:hover {
+    color: aliceblue;
+    border: 2px solid #6ebfb5;
+    background-color: #24a19c;
+}
+
+.slide{
+   
+    margin-top: auto;
+}
+
+.slide img{
+
+    height: 89vh;
+    object-fit: cover;
+}
+
+.carousel-item{
+    min-height: 100%;
+}
+
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5{
+    color: #e779f5;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    color: #e779f5;
+    width: 60%;
+    margin: 10%px auto;
+    font-size: 18px;
+}
+
+.carousel-inner::before{
+    content: '';
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.4);
+    z-index: 1;
+}
+footer
+{
+  margin-top: auto;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #6ebfb5;
+ 
+}
+
+@media(max-width: 767px){
+
+    .carousel-item{
+        min-height: 500px;
+    }
+
+    .carousel-item img{
+        height: 500px;
+    }
+    
+    .carousel-caption{
+        bottom: 30px;
+    }
+
+    .carousel-caption h5{
+        font-size: 50px;
+        margin-top: 0;
+    }
+
+    .carousel-caption p{
+        width: 100%;
+        font-size: 16px;
+    }
+ }
